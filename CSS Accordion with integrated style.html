@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descrizione fumetti.italiani</title>
+<style>
+	
+	@charset "utf-8";
+
+	body {
+    background: linear-gradient(90deg, #a85aa5, #fb9597);
+    background-color: #e8889a;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+	.accordion_container {
+		position: relative;
+		margin: 20px 23% 20px 23%;
+	}
+	
+	input {
+    	display: none;
+	}
+	ul {
+		list-style-position: outside;
+		margin-right: 5%;
+	}
+	label {
+		display: block;
+		padding: 8px 22px;
+		margin: 22px 0 0 0;
+		cursor: pointer;
+		background-color: #fff;
+		border-radius: 0px;
+		color: #3399cc;
+		transition: ease .5s;
+		box-shadow: -8px 10px 5px 0px rgba(54,75,108,0.30);
+		font-weight: bolder;
+		font-size: large;
+	}
+	label:hover {
+		background-color: #3399CC;
+		color:#fff;
+	}
+	input:checked + label {
+		background-color: #3399CC;
+		color:#fff;
+}
+	ul li {
+		padding-left: 1px;
+		margin-left: 1px;
+	}
+	.content {
+		background-color: #fff;
+		padding: 0px 0px;
+		border: 1px solid #fff;
+		margin: 0px 0 1px 0;
+		border-radius: 0px;
+		color: #3399cc;
+		font-weight: normal;
+		font-size: 15px;
+		text-align: justify;
+		box-shadow: -8px 10px 5px 0px rgba(54,75,108,0.30);
+	}
+	a:link {
+		color: #3399cc;
+	}
+	input:checked + label + .content {
+		max-height: 600px;
+		opacity: 1;
+		visibility: visible;
+
+	}
+	input + label + .content {
+		max-height: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: ease-in .25s;
+	}
+
+
+@media ( min-width : 668px ) and (max-width : 1079px ){
+	.accordion_container {
+		position: relative;
+		margin: 20px 15% 0 15%;
+	}
+	.content {
+		text-align: left;
+	}
+}
+
+@media (max-width: 667px) {
+	.accordion_container {
+		position: relative;
+		margin: 20px 9% 0 9%;
+	}
+	.content {
+		font-size: small;
+		text-align: left;
+	}
+	label:hover {
+		background-color: #fff;
+		color:#3399CC;
+	}
+	ul li {
+		margin-right: 20px;
+	}
+}
+
+	
+</style>
+</head>
+
+	
+	
+<body>
+<div class="accordion_container">
+<input type="checkbox" id="descrizione" checked>
+	<label for="descrizione">Descrizione</label>
+  <div class="content">
+		<ul><li>
+		<b>Descrizione_fumetto__________________
+			</b>
+		</li></ul>
+	</div>
+
+	<input type="checkbox" id="contatti" checked>
+	<label for="contatti">Contatti</label>
+	<div class="content">
+		<ul>
+		  <li>Email: <strong><a href="mailto:fumetti.italiani.ebay+info@gmail.com?subject=Richiesta di informazioni sul fumetto" target="_blank">fumetti.italiani.ebay@gmail.com</a></strong> </li>
+	  </ul>
+	</div>
+	
+	<input type="checkbox" id="spedizione">
+	<label for="spedizione">Spedizione</label>
+	<div class="content">
+		<ul>
+			<li>L'invio viene effettuato entro il giorno successivo al pagamento</li>
+			<br>
+			<li>Spedizione in <b>Raccomandata Piego di Libri</b> con PosteItaliane</li>
+			<ul>
+				<li>Pacco tracciabile</li>
+				<li>Arrivo in 3-4 giorni</li>
+			</ul>
+			<br>
+			<li>Spedizione tramite <b>Crono Express</b> con PosteItaliane</li>
+			<ul>
+				<li>Pacco tracciabile</li>
+				<li>Consegna in 1-2 giorni</li>
+			</ul>
+			<br>
+			<li><b>Ritiro a mano</b> grauito</li>
+		</ul>
+	</div>
+
+  <input type="checkbox" id="metodi_pagamento">
+	<label for="metodi_pagamento">Metodi di Pagamento</label>
+	<div class="content">
+		<ul><li>Paypal | Bonifico Bancario | Poste</li></ul>
+	</div>
+
+	<input type="checkbox" id="restituzione">
+	<label for="restituzione">Restituzione</label>
+	<div class="content">
+		<ul><li>La restituzione tramite la procedura automatica di Ebay è consentita per 30 giorni dall'acquisto. 
+			Siamo a disposizione per risolvere ogni eventuale problema: contattaci tramite un messaggio
+			in Ebay o attraverso il nostro indirizzo di posta elettronica <b><a href="mailto:fumetti.italiani.ebay+rest@gmail.com?subject=Ho un problema con l'acquisto.&body=Salve fumetti.italiani, vi chiedo di risolvere il seguente problema:" target="_blank">fumetti.italiani.ebay@gmail.com</a></b> .
+		</li></ul>
+	</div>
+
+	<input type="checkbox" id="feedback">
+	<label for="feedback">Feedback</label>
+	<div class="content">
+		<ul><li>Ci impegniamo a garantire un'esperienza il più positiva ed onesta possibile per l'acquirente.
+			Assegnarci un feedback positivo al termine della transazione aiuta a distinguere il nostro
+			servizio su Ebay.</li>
+			<li>Prima di inviare un feedback negativo, vi chiediamo cortesemente di contattarci così da poter 
+			risolvere insieme ogni eventuale problema.
+		</li></ul>
+	</div>
+	
+	
+</div>
+
+	
+</body>
+</html>
